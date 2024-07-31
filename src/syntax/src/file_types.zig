@@ -287,8 +287,8 @@ pub const python = .{
     .icon = "󰌠",
     .extensions = .{"py"},
     .comment = "#",
-    .first_line_matches = .{ .prefix = "#!", .content = "/bin/bash" },
-    .language_server = .{"pylsp"},
+    .first_line_matches = .{ .prefix = "#!", .content = "/bin/python" },
+    .language_server = .{"ruff", "server"},
 };
 
 pub const regex = .{
@@ -301,6 +301,7 @@ pub const ruby = .{
     .icon = "󰴭",
     .extensions = .{"rb"},
     .comment = "#",
+    .language_server = .{"ruby-lsp"},
 };
 
 pub const rust = .{
